@@ -5,12 +5,13 @@ PHP Class: The code is generate the shadow long css for text and/or box.
 <?php 
     require_once('CssLongShadow.php');
 ?>
-<style>
+
+\<style\>
 .ln-shadow{
     background-color: #913605;
     <?=CssLongShadow::get('text', "#913605", 55, true, false, 'right');?>
 }
-</style>
+<\/style\>
 
 # Example Output
 
