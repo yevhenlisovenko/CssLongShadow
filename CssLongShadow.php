@@ -11,15 +11,15 @@
  *
  * USAGE:
  *
-
- <style>
-
- .shadow{
-       <?=CssLongShadow::get('text', "#ff5350", 55, true, false, 'right');?>
- }
-
- </style>
-
+ *
+ *<style>
+ *
+ *.shadow{
+ *      <?=CssLongShadow::get('text', "#ff5350", 55, true, false, 'right');?>
+ *}
+ *
+ *</style>
+ *
  *
  */
 
@@ -77,8 +77,8 @@ class CssLongShadow
             $shadow = $shadow . $length . 'px ' . $length . 'px 0 rgba(0,0,0,0)';
         }
         #$shadow = unquote($shadow);
-        if ($type == 'box') { return "box-shadow: ".$shadow.";"; }
-        if ($type == 'text'){ return "text-shadow: ".$shadow.";"; }
+        if ($type == 'box') { return "box-shadow: ".$shadow.";-webkit-box-shadow: ".$shadow.";-moz-box-shadow: ".$shadow.";"; }
+        if ($type == 'text'){ return "text-shadow: ".$shadow.";-webkit-text-shadow: ".$shadow.";-moz-text-shadow: ".$shadow.";"; }
 
     }
 
