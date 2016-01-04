@@ -2,6 +2,9 @@
 PHP Class: The code is generate the shadow long css for text and/or box.
 
 # Example Input
+<?php 
+    require_once('CssLongShadow.php');
+?>
 <style>
 .ln-shadow{
     background-color: #913605;
