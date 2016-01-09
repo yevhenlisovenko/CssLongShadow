@@ -1,5 +1,6 @@
 # CssLongShadow
 PHP Class: The code is generate the shadow long css for text and/or box.
+Use of CSS with transparent image (png) or text.
 
 # Example Input
 <?php 
