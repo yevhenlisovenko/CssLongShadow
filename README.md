@@ -2,6 +2,7 @@
 PHP Class: The code is generate the shadow long css for text and/or box.
 Use of CSS with transparent image (png) or text.
 
+
 # Example Input
 <?php 
     require_once('CssLongShadow.php');
@@ -9,6 +10,7 @@ Use of CSS with transparent image (png) or text.
 
 \<style\>
 .ln-shadow{
+    background-image('http://example.com/icon.png');
     background-color: #913605;
     <?=CssLongShadow::get('text', "#913605", 55, true, false, 'right');?>
 }
